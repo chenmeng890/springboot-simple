@@ -1,0 +1,7 @@
+logging:
+    config: classpath:logback-spring.xml
+    path: /export/Logs/${app.domain}/
+    level:
+        root : info
+
+

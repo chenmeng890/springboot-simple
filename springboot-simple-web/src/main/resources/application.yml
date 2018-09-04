@@ -1,0 +1,28 @@
+app:
+    name : demo
+    title : demo
+    domain : springbootSimple
+    description :
+
+server:
+    servlet:
+      context-path: /
+    address: localhost
+    port: 80
+    error:
+       path: /error
+
+spring:
+    profiles:
+        active: @profiles.env.active@
+    fastJson :
+          unAutoResultInfoPaths: /swagger-resources, /v2/api-docs, /api/login, /error
+    mvc:
+      static-path-pattern: /static/**
+    cors:
+       pathPatterns : /mstore/*,/user/*,/category/*,/product/*
+       allowedOrigin :  "*"
+       allowedHeaders : x-requested-with,Content-Type
+       allowedMethods : POST,GET,PUT,OPTIONS,DELETE
+       maxAge : 3600
+       allowedCredentials : true
