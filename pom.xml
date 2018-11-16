@@ -6,7 +6,11 @@
 	<groupId>com.mengchen.springboot</groupId>
 	<artifactId>springboot-simple</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>spingboot-simple-dao</module>
+		<module>spingboot-simple-web</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>springboot-simple</name>
 	<description>Demo project for Spring Boot</description>
