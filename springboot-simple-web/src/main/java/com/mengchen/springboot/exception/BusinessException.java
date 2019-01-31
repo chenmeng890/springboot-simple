@@ -1,7 +1,7 @@
 package com.mengchen.springboot.exception;
 
 
-import com.mengchen.springboot.domain.ResultCode;
+import com.mengchen.springboot.api.domain.ResultCode;
 
 /**
  * Created by chenmeng12 on 2017/11/14.

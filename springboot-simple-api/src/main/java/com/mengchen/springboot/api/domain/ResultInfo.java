@@ -1,8 +1,6 @@
-package com.mengchen.springboot.domain;
+package com.mengchen.springboot.api.domain;
 
-/**
- * Created by chenmeng12 on 2017/11/14.
- */
+
 public class ResultInfo<T> extends ResultCode {
     private T data;
 

@@ -1,7 +1,7 @@
 package com.mengchen.springboot.converter;
 
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
-import com.mengchen.springboot.domain.ResultInfo;
+import com.mengchen.springboot.api.domain.ResultInfo;
 import com.mengchen.springboot.util.CollectionUtils;
 import org.springframework.http.HttpOutputMessage;
 import org.springframework.http.converter.HttpMessageNotWritableException;

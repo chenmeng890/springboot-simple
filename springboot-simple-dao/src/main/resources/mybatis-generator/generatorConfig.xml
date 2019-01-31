@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.jd.virtual.training.dao.MyMapper"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/simple"
+                        userId="simple"
+                        password="111111">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.mengchen.springboot.model" targetProject="../springboot-simple-model/src/main/java"/>
+
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>
+
+       <!--
+            MyBatis3:
+            ANNOTATEDMAPPER:基于注解的Mapper接口，不会有对应的XML映射文件
+            MIXEDMAPPER:XML和注解的混合形式，(上面这种情况中的)SqlProvider注解方法会被XML替代。
+            XMLMAPPER:所有的方法都在XML中，接口调用依赖XML文件。
+        -->
+        <javaClientGenerator targetPackage="com.mengchen.springboot..dao.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
+
+        <table tableName="%">
+            <!--mysql 配置-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+    </context>
+</generatorConfiguration>

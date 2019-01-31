@@ -9,6 +9,9 @@
 	<modules>
 		<module>spingboot-simple-dao</module>
 		<module>spingboot-simple-web</module>
+		<module>springboot-simple-model</module>
+		<module>springboot-simple-api</module>
+		<module>springboot-simple-service</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -50,6 +53,24 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper-spring-boot-starter</artifactId>
+			<version>RELEASE</version>
 		</dependency>
 
 

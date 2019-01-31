@@ -1,8 +1,6 @@
-package com.mengchen.springboot.domain;
+package com.mengchen.springboot.api.domain;
 
-/**
- * Created by chenmeng12 on 2017/11/14.
- */
+
 public class ResultCode {
     public static final ResultCode SUCCESS = new ResultCode(Integer.valueOf(200), "Success");
     public static final ResultCode FAIL = new ResultCode(Integer.valueOf(201), "Fail");

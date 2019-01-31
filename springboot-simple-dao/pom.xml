@@ -11,6 +11,14 @@
 
     <artifactId>springboot-simple-dao</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.mengchen.springboot</groupId>
+            <artifactId>springboot-simple-model</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>

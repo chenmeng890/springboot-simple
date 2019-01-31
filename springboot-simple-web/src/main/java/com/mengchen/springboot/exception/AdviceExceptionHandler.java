@@ -1,7 +1,7 @@
 package com.mengchen.springboot.exception;
 
-import com.mengchen.springboot.domain.ResultCode;
-import com.mengchen.springboot.domain.ResultInfo;
+import com.mengchen.springboot.api.domain.ResultCode;
+import com.mengchen.springboot.api.domain.ResultInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
