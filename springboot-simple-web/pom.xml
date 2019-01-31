@@ -75,6 +75,39 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!--YUI压缩插件-->
+			<plugin>
+				<groupId>net.alchim31.maven</groupId>
+				<artifactId>yuicompressor-maven-plugin</artifactId>
+				<version>1.5.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compress</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<!-- 忽略 js 错误警告 -->
+					<jswarn>false</jswarn>
+					<nosuffix>true</nosuffix>
+					<force>true</force>
+					<linebreakpos>-1</linebreakpos>
+					<!-- 源目录，即需压缩的根目录 -->
+					<sourceDirectory>src/main/resource</sourceDirectory>
+					<!-- 压缩js和css文件 -->
+					<includes>
+						<include>**/*.js</include>
+						<!--<include>**/*.css</include>-->
+					</includes>
+					<!-- 以下目录和文件不会被压缩 -->
+					<excludes>
+						<exclude>**/*.min.js</exclude>
+						<!--<exclude>**/*.min.css</exclude>-->
+					</excludes>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 

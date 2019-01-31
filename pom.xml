@@ -7,8 +7,8 @@
 	<artifactId>springboot-simple</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
-		<module>spingboot-simple-dao</module>
-		<module>spingboot-simple-web</module>
+		<module>springboot-simple-api</module>
+		<module>springboot-simple-web</module>
 		<module>springboot-simple-model</module>
 		<module>springboot-simple-api</module>
 		<module>springboot-simple-service</module>
@@ -55,6 +55,10 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>mysql</groupId>
