@@ -93,6 +93,6 @@
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-extra:1.1.5" level="project" />
     <orderEntry type="library" name="Maven: tk.mybatis:mapper-spring-boot-autoconfigure:2.1.5" level="project" />
     <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.15" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.31" level="project" />
   </component>
 </module>
